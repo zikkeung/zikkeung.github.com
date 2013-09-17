@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Hexo]]></title>
+  <link href="http://zikkeung.github.com/atom.xml" rel="self"/>
+  <link href="http://zikkeung.github.com"/>
+  <updated>2013-09-17T06:46:19.775Z</updated>
+  <id>http://zikkeung.github.com/</id>
+  <author>
+    <name><![CDATA[zikkeung]]></name>
+    <email><![CDATA[zikkeunglam@gmail.com]]></email>
+  </author>
+  <generator uri="http://zespia.tw/hexo">Hexo</generator>
+  <entry>
+    <title type="html"><![CDATA[第一篇文章]]></title>
+    <link href="http://zikkeung.github.com/第一篇文章/"/>
+    <id>http://zikkeung.github.com/第一篇文章/</id>
+    <published>2013-09-17T05:35:21.000Z</published>
+    <updated>2013-09-17T05:37:02.000Z</updated>
+    <content type="html"><![CDATA[<p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字<br><a id="more"></a><br>222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222</p>
+]]></content>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[Hello World]]></title>
+    <link href="http://zikkeung.github.com/hello-world/"/>
+    <id>http://zikkeung.github.com/hello-world/</id>
+    <published>2013-09-17T02:35:21.000Z</published>
+    <updated>2013-09-17T02:35:21.000Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
+]]></content>
+  </entry>
+</feed>
