@@ -130,41 +130,35 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </pre></td><td class="code"><pre><span class="attribute">disqus_shortname</span>: <span class="string">disqus_id</span>
 </pre></td></tr></table></figure>
 
-<p>如果要用多说，将多说提供的代码覆盖掉<figure class="highlight lang-/themes/light/layout/_partial/comment.ejs```"><table><tr><td class="gutter"><pre>1
-2
-3
-</pre></td><td class="code"><pre>
-
-<span class="vala"><span class="preprocessor">## 生成静态文件</span></span>
-</pre></td></tr></table></figure></p>
-<p>hexo generate</p>
+<p>如果要用多说，将多说提供的代码覆盖掉 <strong> /themes/light/layout/_partial/comment.ejs </strong> 里的。</p>
+<h2>生成静态文件</h2>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-3
-</pre></td><td class="code"><pre>执行 generate 命令后，会在 <span class="keyword">public</span> 文件夹生成静态博客文件，讲此文件夹传上去服务器环境即可
-
-<span class="preprocessor">## 预览博客</span>
+</pre></td><td class="code"><pre><span class="title">hexo</span> generate
 </pre></td></tr></table></figure>
 
-<p>hexo server</p>
+<p>执行 generate 命令后，会在 public 文件夹生成静态博客文件，讲此文件夹传上去服务器环境即可</p>
+<h2>预览博客</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="title">hexo</span> server
+</pre></td></tr></table></figure>
+
+<h2>发布博客</h2>
+<p>部署到 Github 需要配置_config.yml文件。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
 4
-</pre></td><td class="code"><pre>
-<span class="preprocessor">## 发布博客</span>
-
-部署到 Github 需要配置_config.yml文件。
+</pre></td><td class="code"><pre><span class="method">deploy:</span>
+  <span class="method">type:</span> github
+  <span class="method">repository:</span> git@github.<span class="method">com:</span>zikkeung/zikkeung.github.com.git
+  <span class="method">branch:</span> master
 </pre></td></tr></table></figure>
 
-<p>deploy:<br>  type: github<br>  repository: git@github.com:zikkeung/zikkeung.github.com.git<br>  branch: master</p>
+<p>发布命令</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-</pre></td><td class="code"><pre>
-发布命令
+</pre></td><td class="code"><pre><span class="title">hexo</span> deploy
 </pre></td></tr></table></figure>
 
-<p>hexo deploy<br>```</p>
 <p>经过上面的步骤，你的博客就初步弄好了，尽情的写博客吧</p>
 
       
