@@ -3,13 +3,45 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Zikkeung's blog</title>
+  <title>hexo 适合前端 geek 的博客 | Zikkeung's blog</title>
   <meta name="author" content="zikkeung">
+  
+  <meta name="description" content="hexo 是一个基于 Node.js 的静态博客程序，编译上百篇文字只需要几秒，和Octopress项目，速度占有很大的优势。hexo 只需要将生成静态网页放到服务器上就可以了，所以可以将博客托管在github、hreoku、bae等平台上。
+
+项目地址 https://github.com/tommy351/hexo
+官网 http://zespia.tw/hexo
+作者 https://twitter.com/tommy351
+
+安装
+首先需要安装nodejs和npm包管理。
+1
+npm install -g hexo
+
+
+
+
+更新
+1
+npm install -g hexo
+
+
+初始化博客
+进入到指定的目录然后执行
+1
+hexo init &lt;folder&gt;
+
+
+新建文章
+1
+hexo new 'title'
+
+
+在/source/_post/就可以找到相应的文件了,文章是使用［markdown］（http://wowubuntu.com/markdown/）语法编写的， 插入&lt;figure class=&quot;highlight lang-">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="hexo 适合前端 geek 的博客"/>
   <meta property="og:site_name" content="Zikkeung's blog"/>
 
   
@@ -52,39 +84,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2013-10-11T09:44:52.000Z"><a href="/test/">10月 11 2013</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/test/">test</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
   <div class="post-content">
     <header>
@@ -94,7 +94,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
       
       
   
-    <h1 class="title"><a href="/hexo适合前端geek的博客/">hexo 适合前端 geek 的博客</a></h1>
+    <h1 class="title">hexo 适合前端 geek 的博客</h1>
   
 
     </header>
@@ -112,7 +112,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </pre></td><td class="code"><pre><span class="title">npm</span> install -g hexo
 </pre></td></tr></table></figure>
 
-<!--more-->
+<a id="more"></a>
 
 <h2>更新</h2>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
@@ -130,61 +130,104 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </pre></td><td class="code"><pre>hexo <span class="keyword">new</span> <span class="attribute">'title</span>'
 </pre></td></tr></table></figure>
 
-<p>在/source/_post/就可以找到相应的文件了,文章是使用［markdown］（<a href="http://wowubuntu.com/markdown/）语法编写的，" target="_blank">http://wowubuntu.com/markdown/）语法编写的，</a> 插入<figure class="highlight lang-
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/hexo适合前端geek的博客/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2013-10-11T05:35:21.000Z"><a href="/grunt入门/">10月 11 2013</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/grunt入门/">grunt入门</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p><img src="http://farm4.staticflickr.com/3696/10202053713_38f3bbb50a_t.jpg" alt="grount icon"></p>
-<h2>安装 CLI</h2>
-<p>首先需要安装<a href="http://nodejs.org/" title="nodejs 官网" target="_blank">nodejs</a>和<a href="http://npm.org/" title="npm 官网" target="_blank">npm</a>包管理。</p>
+<p>在/source/_post/就可以找到相应的文件了,文章是使用［markdown］（<a href="http://wowubuntu.com/markdown/）语法编写的，" target="_blank">http://wowubuntu.com/markdown/）语法编写的，</a> 插入<figure class="highlight lang-<a id="more"></a>"><figcaption><span>```表示文章简介</span></figcaption><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>
+<span class="preprocessor">## 生成静态文件</span>
+</pre></td></tr></table></figure></p>
+<p>hexo generate</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="title">npm</span> install -g grunt-cli
+2
+3
+</pre></td><td class="code"><pre>执行 generate 命令后，会在 <span class="keyword">public</span> 文件夹生成静态博客文件，讲此文件夹传上去服务器环境即可
+
+<span class="preprocessor">## 预览博客</span>
 </pre></td></tr></table></figure>
 
-<p>注意，安装 grunt-cli 并不等于安装了grunt！grunt CLI的任务很简单：调用与Gruntfile在同一目录中grunt。这样带来的好处是，允许你在同一个系统上同时安装多个版本的grunt</p>
-<p>如果是安装了grunt 0.3之前的版本，请先卸载 grunt 再安装 grunt-cli</p>
+<p>hexo server</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+</pre></td><td class="code"><pre>
+<span class="preprocessor">## 发布博客</span>
+
+部署到 Github 需要配置_config.yml文件。
+</pre></td></tr></table></figure>
+
+<p>deploy:<br>  type: github<br>  repository: git@github.com:zikkeung/zikkeung.github.com.git<br>  branch: master</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>
+发布命令
+</pre></td></tr></table></figure>
+
+<p>hexo deploy  </p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>
+<span class="preprocessor">## 使用插件</span>
+</pre></td></tr></table></figure>
+
+<p>npm install <plugin-name> —save</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>如何在<span class="filename">_config.yml文件加上
+</pre></td></tr></table></figure>
+
+<p>plugins:<br>- hexo-generator-feed  //插件名<br>- hexo-generator-sitemap<br>- </p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre>插件可以在<span class="link_label">[这里]</span>(<span class="link_url">https://github.com/tommy351/hexo/wiki/Plugins</span>)找到
+
+<span class="header">## 评论</span>
+静态博客的评论是要使用第三方评论，DISQUS 比较有名的社会化评论，国内有多说。
+
+使用DISQUS很简单，只需要去DISQUS注册一个账号，然后修改_config.yml文件。
+</pre></td></tr></table></figure>
+
+<p>disqus_shortname: disqus_id</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>
+如果要用多说，将多说提供的代码覆盖掉 <span class="string">``</span><span class="string">`/themes/light/layout/_partial/comment.ejs
+</pre></td></tr></table></figure>
+
 
       
     </div>
     <footer>
       
         
-          <div class="alignleft">
-            <a href="/grunt入门/#more" class="more-link">阅读全文</a>
-          </div>
         
-        
+  
+  <div class="tags">
+    <a href="/tags/hexo/">hexo</a>
+  </div>
+
+        <!-- Baidu Button BEGIN -->
+        <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+          <a class="bds_tsina"></a>
+          <a class="bds_douban"></a>
+          <a class="bds_tqq"></a>
+          <a class="bds_qzone"></a>
+          <a class="bds_renren"></a>
+          <a class="bds_tieba"></a>
+          <a class="bds_sdo"></a>
+          <a class="bds_fbook"></a>
+          <a class="bds_twi"></a>
+          <span class="bds_more"></span>
+          <a class="shareCount"></a>
+        </div>
+        <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6825725" ></script>
+        <script type="text/javascript" id="bdshell_js"></script>
+        <script type="text/javascript">
+        document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+        </script>
+        <!-- Baidu Button END -->
       
       <div class="clearfix"></div>
     </footer>
@@ -192,45 +235,13 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </article>
 
 
-
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2013-09-17T02:35:21.000Z"><a href="/hello-world/">9月 17 2013</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/hello-world/">Hello World</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
+<section id="comment">
+  <h1 class="title">留言</h1>
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
-</article>
-
-
-
-
-<nav id="pagination">
-  
-  
-  <div class="clearfix"></div>
-</nav></div></div>
+</section>
+</div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
@@ -283,7 +294,7 @@ var disqus_shortname = 'zikkeung';
   var dsq = document.createElement('script');
   dsq.type = 'text/javascript';
   dsq.async = true;
-  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 }());
 </script>
