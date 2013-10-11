@@ -3,7 +3,7 @@
   <title><![CDATA[Zikkeung's blog]]></title>
   <link href="http://zikkeung.github.com/atom.xml" rel="self"/>
   <link href="http://zikkeung.github.com"/>
-  <updated>2013-10-11T10:01:03.297Z</updated>
+  <updated>2013-10-11T10:08:30.000Z</updated>
   <id>http://zikkeung.github.com/</id>
   <author>
     <name><![CDATA[zikkeung]]></name>
@@ -15,7 +15,7 @@
     <link href="http://zikkeung.github.com/hexo适合前端geek的博客/"/>
     <id>http://zikkeung.github.com/hexo适合前端geek的博客/</id>
     <published>2013-10-12T11:35:21.000Z</published>
-    <updated>2013-10-11T09:57:55.000Z</updated>
+    <updated>2013-10-11T10:08:17.000Z</updated>
     <content type="html"><![CDATA[<p>hexo 是一个基于 Node.js 的静态博客程序，编译上百篇文字只需要几秒，和Octopress项目，速度占有很大的优势。hexo 只需要将生成静态网页放到服务器上就可以了，所以可以将博客托管在github、hreoku、bae等平台上。</p>
 <ul>
 <li>项目地址 <a href="https://github.com/tommy351/hexo" target="_blank">https://github.com/tommy351/hexo</a></li>
@@ -46,35 +46,8 @@
 </pre></td></tr></table></figure>
 
 <p>在/source/_post/就可以找到相应的文件了,文章是使用［markdown］（<a href="http://wowubuntu.com/markdown/）语法编写的" target="_blank">http://wowubuntu.com/markdown/）语法编写的</a></p>
-<h2>生成静态文件</h2>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="title">hexo</span> generate
-</pre></td></tr></table></figure>
-
-<p>执行 generate 命令后，会在 public 文件夹生成静态博客文件，讲此文件夹传上去服务器环境即可</p>
-<h2>预览博客</h2>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="title">hexo</span> server
-</pre></td></tr></table></figure>
-
-<h2>发布博客</h2>
-<p>部署到 Github 需要配置_config.yml文件。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-</pre></td><td class="code"><pre><span class="method">deploy:</span>
-  <span class="method">type:</span> github
-  <span class="method">repository:</span> git@github.<span class="method">com:</span>zikkeung/zikkeung.github.com.git
-  <span class="method">branch:</span> master
-</pre></td></tr></table></figure>
-
-<p>发布命令</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="title">hexo</span> deploy
-</pre></td></tr></table></figure>
-
 <h2>使用插件</h2>
+<p>hexo提供了一些<a href="https://github.com/tommy351/hexo/wiki/Plugins" target="_blank">插件</a>给大家选择使用，通过插件，例如可以实现rss订阅功能</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>npm install <span class="tag">&lt;<span class="title">plugin-name</span>&gt;</span> --save
 </pre></td></tr></table></figure>
@@ -82,12 +55,8 @@
 <p>如何在_config.yml文件加上</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
-3
-4
-</pre></td><td class="code"><pre><span class="comment">plugins:</span>
-<span class="literal">-</span> <span class="comment">hexo</span>-<span class="comment">generator</span>-<span class="comment">feed</span>  <span class="comment">//插件名</span>
-<span class="literal">-</span> <span class="comment">hexo</span>-<span class="comment">generator</span>-<span class="comment">sitemap</span>
-<span class="literal">-</span>
+</pre></td><td class="code"><pre>plugins:
+- hexo-generator-feed  <span class="comment">//插件名</span>
 </pre></td></tr></table></figure>
 
 <p>插件可以在<a href="https://github.com/tommy351/hexo/wiki/Plugins" target="_blank">这里</a>找到</p>
@@ -98,7 +67,42 @@
 </pre></td><td class="code"><pre><span class="attribute">disqus_shortname</span>: <span class="string">disqus_id</span>
 </pre></td></tr></table></figure>
 
-<p>如果要用多说，将多说提供的代码覆盖掉 <code>/themes/light/layout/_partial/comment.ejs</code></p>
+<p>如果要用多说，将多说提供的代码覆盖掉<figure class="highlight lang-/themes/light/layout/_partial/comment.ejs```"><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre>
+
+<span class="vala"><span class="preprocessor">## 生成静态文件</span></span>
+</pre></td></tr></table></figure></p>
+<p>hexo generate</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre>执行 generate 命令后，会在 <span class="keyword">public</span> 文件夹生成静态博客文件，讲此文件夹传上去服务器环境即可
+
+<span class="preprocessor">## 预览博客</span>
+</pre></td></tr></table></figure>
+
+<p>hexo server</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+</pre></td><td class="code"><pre>
+<span class="preprocessor">## 发布博客</span>
+
+部署到 Github 需要配置_config.yml文件。
+</pre></td></tr></table></figure>
+
+<p>deploy:<br>  type: github<br>  repository: git@github.com:zikkeung/zikkeung.github.com.git<br>  branch: master</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>
+发布命令
+</pre></td></tr></table></figure>
+
+<p>hexo deploy<br>```</p>
+<p>经过上面的步骤，你的博客就初步弄好了，尽情的写博客吧</p>
 ]]></content>
     <category scheme="http://zikkeung.github.com/tags/hexo/" term="hexo"/>
   </entry>
