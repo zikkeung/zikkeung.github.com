@@ -15,28 +15,7 @@
 安装
 首先需要安装nodejs和npm包管理。
 1
-npm install -g hexo
-
-
-
-
-更新
-1
-npm install -g hexo
-
-
-初始化博客
-进入到指定的目录然后执行
-1
-hexo init &lt;folder&gt;
-
-
-新建文章
-1
-hexo new 'title'
-
-
-在/source/_post/就可以找到相应的文件了,文章是使用［markdown］（http://wowubuntu.com/markdown/）语法编写的， 插入&lt;figure class=&quot;highlight lang-">
+npm install -g hexo">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -90,7 +69,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
     <header>
       
         <div class="icon"></div>
-        <time datetime="2013-10-11T05:35:21.000Z"><a href="/hexo适合前端geek的博客/">10月 11 2013</a></time>
+        <time datetime="2013-10-12T11:35:21.000Z"><a href="/hexo适合前端geek的博客/">10月 12 2013</a></time>
       
       
   
@@ -112,8 +91,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </pre></td><td class="code"><pre><span class="title">npm</span> install -g hexo
 </pre></td></tr></table></figure>
 
-<a id="more"></a>
-
+<p><a id="more"></a></p>
 <h2>更新</h2>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre><span class="title">npm</span> install -g hexo
@@ -130,72 +108,60 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </pre></td><td class="code"><pre>hexo <span class="keyword">new</span> <span class="attribute">'title</span>'
 </pre></td></tr></table></figure>
 
-<p>在/source/_post/就可以找到相应的文件了,文章是使用［markdown］（<a href="http://wowubuntu.com/markdown/）语法编写的，" target="_blank">http://wowubuntu.com/markdown/）语法编写的，</a> 插入<figure class="highlight lang-<a id="more"></a>"><figcaption><span>```表示文章简介</span></figcaption><table><tr><td class="gutter"><pre>1
-2
-</pre></td><td class="code"><pre>
-<span class="preprocessor">## 生成静态文件</span>
-</pre></td></tr></table></figure></p>
-<p>hexo generate</p>
+<p>在/source/_post/就可以找到相应的文件了,文章是使用［markdown］（<a href="http://wowubuntu.com/markdown/）语法编写的" target="_blank">http://wowubuntu.com/markdown/）语法编写的</a></p>
+<h2>生成静态文件</h2>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-3
-</pre></td><td class="code"><pre>执行 generate 命令后，会在 <span class="keyword">public</span> 文件夹生成静态博客文件，讲此文件夹传上去服务器环境即可
-
-<span class="preprocessor">## 预览博客</span>
+</pre></td><td class="code"><pre><span class="title">hexo</span> generate
 </pre></td></tr></table></figure>
 
-<p>hexo server</p>
+<p>执行 generate 命令后，会在 public 文件夹生成静态博客文件，讲此文件夹传上去服务器环境即可</p>
+<h2>预览博客</h2>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-</pre></td><td class="code"><pre>
-<span class="preprocessor">## 发布博客</span>
-
-部署到 Github 需要配置_config.yml文件。
+</pre></td><td class="code"><pre><span class="title">hexo</span> server
 </pre></td></tr></table></figure>
 
-<p>deploy:<br>  type: github<br>  repository: git@github.com:zikkeung/zikkeung.github.com.git<br>  branch: master</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-</pre></td><td class="code"><pre>
-发布命令
-</pre></td></tr></table></figure>
-
-<p>hexo deploy  </p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-</pre></td><td class="code"><pre>
-<span class="preprocessor">## 使用插件</span>
-</pre></td></tr></table></figure>
-
-<p>npm install <plugin-name> —save</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>如何在<span class="filename">_config.yml文件加上
-</pre></td></tr></table></figure>
-
-<p>plugins:<br>- hexo-generator-feed  //插件名<br>- hexo-generator-sitemap<br>- </p>
+<h2>发布博客</h2>
+<p>部署到 Github 需要配置_config.yml文件。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
 4
-5
-6
-</pre></td><td class="code"><pre>插件可以在<span class="link_label">[这里]</span>(<span class="link_url">https://github.com/tommy351/hexo/wiki/Plugins</span>)找到
-
-<span class="header">## 评论</span>
-静态博客的评论是要使用第三方评论，DISQUS 比较有名的社会化评论，国内有多说。
-
-使用DISQUS很简单，只需要去DISQUS注册一个账号，然后修改_config.yml文件。
+</pre></td><td class="code"><pre><span class="method">deploy:</span>
+  <span class="method">type:</span> github
+  <span class="method">repository:</span> git@github.<span class="method">com:</span>zikkeung/zikkeung.github.com.git
+  <span class="method">branch:</span> master
 </pre></td></tr></table></figure>
 
-<p>disqus_shortname: disqus_id</p>
+<p>发布命令</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="title">hexo</span> deploy
+</pre></td></tr></table></figure>
+
+<h2>使用插件</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>npm install <span class="tag">&lt;<span class="title">plugin-name</span>&gt;</span> --save
+</pre></td></tr></table></figure>
+
+<p>如何在_config.yml文件加上</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
-</pre></td><td class="code"><pre>
-如果要用多说，将多说提供的代码覆盖掉 <span class="string">``</span><span class="string">`/themes/light/layout/_partial/comment.ejs
+3
+4
+</pre></td><td class="code"><pre><span class="comment">plugins:</span>
+<span class="literal">-</span> <span class="comment">hexo</span>-<span class="comment">generator</span>-<span class="comment">feed</span>  <span class="comment">//插件名</span>
+<span class="literal">-</span> <span class="comment">hexo</span>-<span class="comment">generator</span>-<span class="comment">sitemap</span>
+<span class="literal">-</span>
 </pre></td></tr></table></figure>
 
+<p>插件可以在<a href="https://github.com/tommy351/hexo/wiki/Plugins" target="_blank">这里</a>找到</p>
+<h2>评论</h2>
+<p>静态博客的评论是要使用第三方评论，DISQUS 比较有名的社会化评论，国内有多说。</p>
+<p>使用DISQUS很简单，只需要去DISQUS注册一个账号，然后修改_config.yml文件。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="attribute">disqus_shortname</span>: <span class="string">disqus_id</span>
+</pre></td></tr></table></figure>
+
+<p>如果要用多说，将多说提供的代码覆盖掉 <code>/themes/light/layout/_partial/comment.ejs</code></p>
 
       
     </div>
