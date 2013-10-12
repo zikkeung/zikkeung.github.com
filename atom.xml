@@ -3,7 +3,7 @@
   <title><![CDATA[Zikkeung's blog]]></title>
   <link href="http://zikkeung.github.com/atom.xml" rel="self"/>
   <link href="http://zikkeung.github.com"/>
-  <updated>2013-10-12T07:29:06.076Z</updated>
+  <updated>2013-10-12T07:30:49.620Z</updated>
   <id>http://zikkeung.github.com/</id>
   <author>
     <name><![CDATA[zikkeung]]></name>
@@ -11,11 +11,11 @@
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
   <entry>
-    <title type="html"><![CDATA[Hello World]]></title>
+    <title type="html"><![CDATA[node-webkit 教程]]></title>
     <link href="http://zikkeung.github.com/node-webkit/"/>
     <id>http://zikkeung.github.com/node-webkit/</id>
     <published>2013-10-20T14:10:00.000Z</published>
-    <updated>2013-10-12T07:29:03.000Z</updated>
+    <updated>2013-10-12T07:30:44.000Z</updated>
     <content type="html"><![CDATA[<h2>打包</h2>
 <h3>OSX</h3>
 <h3>step 1</h3>
