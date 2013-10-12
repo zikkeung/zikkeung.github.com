@@ -63,6 +63,56 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
     <header>
       
         <div class="icon"></div>
+        <time datetime="2013-10-20T14:10:00.000Z"><a href="/node-webkit/">10月 20 2013</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/node-webkit/">Hello World</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h2>打包</h2>
+<h3>OSX</h3>
+<h3>step 1</h3>
+<p>在终端执行下面的命令:</p>
+<ol>
+<li><p>进入 node-webik 项目文件夹<figure class="highlight lang-cd"><figcaption><span>~/Projects/my_app```</span></figcaption><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="comment">2</span>. <span class="comment">```Run</span> <span class="comment">zip</span> <span class="literal">-</span><span class="comment">r</span> <span class="string">.</span><span class="string">.</span><span class="comment">/${PWD##*/}</span>.<span class="comment">nw</span> <span class="comment">*
+</pre></td></tr></table></figure></p>
+</li>
+<li><p>现在就会有一个 .nw 缀的文件在上一层的目录里</p>
+</li>
+</ol>
+<p>如果机器已安装了 node-webkit.app <a href="https://s3.amazonaws.com/node-webkit/v0.7.5/node-webkit-v0.7.5-osx-ia32.zip" target="_blank">32bit, 10.7+</a>，就可以直接运行 .nw 的文件，如果想封装成app，请到第二步。</p>
+<h3>step 2</h3>
+<ol>
+<li>下载 node-webkit.app</li>
+<li>右键 node-webkit.app 选择显示包内容，进入 <code>Contents/Resources</code>目录，将上一步的 my_app.nw 重命名为 app.nw, 然后复制进来</li>
+<li><code>Contents/Resources/app.icns</code> 这就是app的默认图标，可以己indow</li>
+</ol>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2013-10-13T12:35:21.000Z"><a href="/开发常用网站导航/">10月 13 2013</a></time>
       
       
@@ -73,7 +123,8 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
     </header>
     <div class="entry">
       
-        <h3>API</h3>
+        <hr>
+<h3>API</h3>
 <ul>
 <li><a href="http://css.doyoe.com/" target="_blank">css手册</a></li>
 <li><a href="http://expressjs.com" target="_blank">Express</a> <a href="http://expressjs.jser.us/" target="_blank">翻译</a></li>
@@ -81,30 +132,15 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 <li><a href="http://ued.ctrip.com/blog/wp-content/webkitcss/index.html" target="_blank">webkit css library</a></li>
 <li><a href="http://zeptojs.com/" target="_blank">zepto api</a> <a href="http://mweb.baidu.com/zeptoapi/" target="_blank">翻译</a></li>
 </ul>
-<h3>前端</h3>
-<ul>
-<li><a href="http://angularjs.org" target="_blank">angularjs</a></li>
-<li><a href="http://getbootstrap.com" target="_blank">Bootstrap</a> <a href="http://v3.bootcss.com" target="_blank">翻译</a></li>
-<li><a href="http://browserhacks.com/" target="_blank">css hacks</a></li>
-<li><a href="http://gmu.baidu.com/" target="_blank">GMU</a></li>
-<li><a href="http://gruntjs.com/" target="_blank">Grunt</a> <a href="http://www.gruntjs.org" target="_blank">翻译</a> <a href="http://gruntjs.bootcss.com" target="_blank">翻译2</a></li>
-<li><a href="http://www.w3help.org/" target="_blank">W3 help</a></li>
-<li><a href="http://msdn.microsoft.com/zh-cn/library/ie/hh673549.aspx" target="_blank">IE10 开发指南</a></li>
-</ul>
-<h3>PHP</h3>
-<ul>
-<li><a href="http://www.phptherightway.com/" target="_blank">PHP之道</a> <a href="http://wulijun.github.io/php-the-right-way/#site-header" target="_blank">翻译</a></li>
-</ul>
-<h3>其他</h3>
-<ul>
-<li><a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">markdown syntax</a> <a href="http://markdown.tw/" target="_blank">翻译</a></li>
-<li><a href="http://docs.sublimetext.tw/" target="_blank">Sublime Text 手冊</a></li>
-</ul>
 
       
     </div>
     <footer>
       
+        
+          <div class="alignleft">
+            <a href="/开发常用网站导航/#more" class="more-link">阅读全文</a>
+          </div>
         
         
       
@@ -233,6 +269,10 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
     <li><a href="/tags/grunt/">grunt</a><small>1</small></li>
   
     <li><a href="/tags/hexo/">hexo</a><small>1</small></li>
+  
+    <li><a href="/tags/nodejs/">nodejs</a><small>1</small></li>
+  
+    <li><a href="/tags/webapp/">webapp</a><small>1</small></li>
   
   </ul>
 </div>

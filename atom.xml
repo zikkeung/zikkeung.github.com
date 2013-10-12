@@ -3,7 +3,7 @@
   <title><![CDATA[Zikkeung's blog]]></title>
   <link href="http://zikkeung.github.com/atom.xml" rel="self"/>
   <link href="http://zikkeung.github.com"/>
-  <updated>2013-10-12T02:55:28.801Z</updated>
+  <updated>2013-10-12T07:29:06.076Z</updated>
   <id>http://zikkeung.github.com/</id>
   <author>
     <name><![CDATA[zikkeung]]></name>
@@ -11,12 +11,42 @@
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
   <entry>
+    <title type="html"><![CDATA[Hello World]]></title>
+    <link href="http://zikkeung.github.com/node-webkit/"/>
+    <id>http://zikkeung.github.com/node-webkit/</id>
+    <published>2013-10-20T14:10:00.000Z</published>
+    <updated>2013-10-12T07:29:03.000Z</updated>
+    <content type="html"><![CDATA[<h2>打包</h2>
+<h3>OSX</h3>
+<h3>step 1</h3>
+<p>在终端执行下面的命令:</p>
+<ol>
+<li><p>进入 node-webik 项目文件夹<figure class="highlight lang-cd"><figcaption><span>~/Projects/my_app```</span></figcaption><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="comment">2</span>. <span class="comment">```Run</span> <span class="comment">zip</span> <span class="literal">-</span><span class="comment">r</span> <span class="string">.</span><span class="string">.</span><span class="comment">/${PWD##*/}</span>.<span class="comment">nw</span> <span class="comment">*
+</pre></td></tr></table></figure></p>
+</li>
+<li><p>现在就会有一个 .nw 缀的文件在上一层的目录里</p>
+</li>
+</ol>
+<p>如果机器已安装了 node-webkit.app <a href="https://s3.amazonaws.com/node-webkit/v0.7.5/node-webkit-v0.7.5-osx-ia32.zip" target="_blank">32bit, 10.7+</a>，就可以直接运行 .nw 的文件，如果想封装成app，请到第二步。</p>
+<h3>step 2</h3>
+<ol>
+<li>下载 node-webkit.app</li>
+<li>右键 node-webkit.app 选择显示包内容，进入 <code>Contents/Resources</code>目录，将上一步的 my_app.nw 重命名为 app.nw, 然后复制进来</li>
+<li><code>Contents/Resources/app.icns</code> 这就是app的默认图标，可以己indow</li>
+</ol>
+]]></content>
+    <category scheme="http://zikkeung.github.com/tags/webapp/" term="webapp"/>
+    <category scheme="http://zikkeung.github.com/tags/nodejs/" term="nodejs"/>
+  </entry>
+  <entry>
     <title type="html"><![CDATA[开发常用网站导航]]></title>
     <link href="http://zikkeung.github.com/开发常用网站导航/"/>
     <id>http://zikkeung.github.com/开发常用网站导航/</id>
     <published>2013-10-13T12:35:21.000Z</published>
-    <updated>2013-10-12T02:54:54.000Z</updated>
-    <content type="html"><![CDATA[<h3>API</h3>
+    <updated>2013-10-12T06:21:21.000Z</updated>
+    <content type="html"><![CDATA[<hr>
+<h3>API</h3>
 <ul>
 <li><a href="http://css.doyoe.com/" target="_blank">css手册</a></li>
 <li><a href="http://expressjs.com" target="_blank">Express</a> <a href="http://expressjs.jser.us/" target="_blank">翻译</a></li>
@@ -24,6 +54,8 @@
 <li><a href="http://ued.ctrip.com/blog/wp-content/webkitcss/index.html" target="_blank">webkit css library</a></li>
 <li><a href="http://zeptojs.com/" target="_blank">zepto api</a> <a href="http://mweb.baidu.com/zeptoapi/" target="_blank">翻译</a></li>
 </ul>
+<a id="more"></a>
+
 <h3>前端</h3>
 <ul>
 <li><a href="http://angularjs.org" target="_blank">angularjs</a></li>
@@ -33,6 +65,7 @@
 <li><a href="http://gruntjs.com/" target="_blank">Grunt</a> <a href="http://www.gruntjs.org" target="_blank">翻译</a> <a href="http://gruntjs.bootcss.com" target="_blank">翻译2</a></li>
 <li><a href="http://www.w3help.org/" target="_blank">W3 help</a></li>
 <li><a href="http://msdn.microsoft.com/zh-cn/library/ie/hh673549.aspx" target="_blank">IE10 开发指南</a></li>
+<li><a href="http://javascript.ruanyifeng.com/" target="_blank">JavaScript 标准参考教程</a></li>
 </ul>
 <h3>PHP</h3>
 <ul>
