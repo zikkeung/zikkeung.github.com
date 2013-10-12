@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://zikkeung.github.com/开发常用网站导航/</loc>
+    <lastmod>2013-10-12T02:05:23.000Z</lastmod>
+  </url>
+  <url>
+    <loc>http://zikkeung.github.com/lab/index.html</loc>
+    <lastmod>2013-10-12T00:25:13.000Z</lastmod>
+  </url>
+  <url>
     <loc>http://zikkeung.github.com/hexo适合前端geek的博客/</loc>
-    <lastmod>2013-10-11T12:57:52.000Z</lastmod>
+    <lastmod>2013-10-11T12:59:37.000Z</lastmod>
   </url>
   <url>
     <loc>http://zikkeung.github.com/grunt入门/</loc>

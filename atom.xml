@@ -3,7 +3,7 @@
   <title><![CDATA[Zikkeung's blog]]></title>
   <link href="http://zikkeung.github.com/atom.xml" rel="self"/>
   <link href="http://zikkeung.github.com"/>
-  <updated>2013-10-11T12:57:57.883Z</updated>
+  <updated>2013-10-12T02:05:34.799Z</updated>
   <id>http://zikkeung.github.com/</id>
   <author>
     <name><![CDATA[zikkeung]]></name>
@@ -11,11 +11,25 @@
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
   <entry>
+    <title type="html"><![CDATA[开发常用网站导航]]></title>
+    <link href="http://zikkeung.github.com/开发常用网站导航/"/>
+    <id>http://zikkeung.github.com/开发常用网站导航/</id>
+    <published>2013-10-13T12:35:21.000Z</published>
+    <updated>2013-10-12T02:05:23.000Z</updated>
+    <content type="html"><![CDATA[<h3>前端</h3>
+<ul>
+<li>angularjs   <a href="http://angularjs.org/" title="angularjs官网" target="_blank">官网</a></li>
+<li>Bootstrap   <a href="http://getbootstrap.com/" title="Bootstrap官网" target="_blank">官网</a>  <a href="http://v3.bootcss.com/" title="Bootstrap中文网" target="_blank">翻译</a></li>
+<li>Grunt   <a href="http://gruntjs.com/" title="grunt官网" target="_blank">官网</a>  <a href="http://gruntjs.bootcss.com/" title="Grunt中文网" target="_blank">翻译</a></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title type="html"><![CDATA[hexo 适合前端 geek 的博客]]></title>
     <link href="http://zikkeung.github.com/hexo适合前端geek的博客/"/>
     <id>http://zikkeung.github.com/hexo适合前端geek的博客/</id>
     <published>2013-10-12T11:35:21.000Z</published>
-    <updated>2013-10-11T12:57:52.000Z</updated>
+    <updated>2013-10-11T12:59:37.000Z</updated>
     <content type="html"><![CDATA[<p>hexo 是一个基于 Node.js 的静态博客程序，编译上百篇文字只需要几秒，和Octopress项目，速度占有很大的优势。hexo 只需要将生成静态网页放到服务器上就可以了，所以可以将博客托管在github、hreoku、bae等平台上。</p>
 <ul>
 <li>项目地址 <a href="https://github.com/tommy351/hexo" target="_blank">https://github.com/tommy351/hexo</a></li>
@@ -64,38 +78,49 @@
 <p>静态博客的评论是要使用第三方评论，DISQUS 比较有名的社会化评论，国内有多说。</p>
 <p>使用DISQUS很简单，只需要去DISQUS注册一个账号，然后修改_config.yml文件。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="attribute">disqus_shortname</span>: <span class="string">disqus_id</span>
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="label">disqus_shortname:</span> disqus_id
+```/Users/zikkeung/Documents/code/hexo/source/_posts/hello-world<span class="preprocessor">.md</span>
+
+如果要用多说，将多说提供的代码覆盖掉 ** /themes/light/layout/_partial/comment<span class="preprocessor">.ejs</span> ** 里的。
+
+
+<span class="preprocessor">## 生成静态文件</span>
 </pre></td></tr></table></figure>
 
-<p>如果要用多说，将多说提供的代码覆盖掉 <strong> /themes/light/layout/_partial/comment.ejs </strong> 里的。</p>
-<h2>生成静态文件</h2>
+<p>hexo generate</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="title">hexo</span> generate
+2
+3
+</pre></td><td class="code"><pre>执行 generate 命令后，会在 <span class="keyword">public</span> 文件夹生成静态博客文件，讲此文件夹传上去服务器环境即可
+
+<span class="preprocessor">## 预览博客</span>
 </pre></td></tr></table></figure>
 
-<p>执行 generate 命令后，会在 public 文件夹生成静态博客文件，讲此文件夹传上去服务器环境即可</p>
-<h2>预览博客</h2>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="title">hexo</span> server
-</pre></td></tr></table></figure>
-
-<h2>发布博客</h2>
-<p>部署到 Github 需要配置_config.yml文件。</p>
+<p>hexo server</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
 4
-</pre></td><td class="code"><pre><span class="method">deploy:</span>
-  <span class="method">type:</span> github
-  <span class="method">repository:</span> git@github.<span class="method">com:</span>zikkeung/zikkeung.github.com.git
-  <span class="method">branch:</span> master
+</pre></td><td class="code"><pre>
+<span class="preprocessor">## 发布博客</span>
+
+部署到 Github 需要配置_config.yml文件。
 </pre></td></tr></table></figure>
 
-<p>发布命令</p>
+<p>deploy:<br>  type: github<br>  repository: git@github.com:zikkeung/zikkeung.github.com.git<br>  branch: master</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="title">hexo</span> deploy
+2
+</pre></td><td class="code"><pre>
+发布命令
 </pre></td></tr></table></figure>
 
+<p>hexo deploy<br>```</p>
 <p>经过上面的步骤，你的博客就初步弄好了，尽情的写博客吧</p>
 ]]></content>
     <category scheme="http://zikkeung.github.com/tags/hexo/" term="hexo"/>
