@@ -3,15 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>第一篇文章 | Zikkeung's blog</title>
+  <title>node-webkit 教程 | Zikkeung's blog</title>
   <meta name="author" content="zikkeung">
   
-  <meta name="description" content="文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字">
+  <meta name="description" content="打包
+OSX
+step 1
+在终端执行下面的命令:
+
+进入 node-webik 项目文件夹~/Projects/my_app```1
+2. 压缩 ```Run zip -r ../${PWD##*/}.nw *
+
+
+现在就会有一个 .nw 缀的文件在上一层的目录里
+
+
+如果机器已安装了 node-webkit.app 32bit, 10.7+，就可以直接运行 .nw 的文件，如果想封装成app，请到第二步。">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="第一篇文章"/>
+  <meta property="og:title" content="node-webkit 教程"/>
   <meta property="og:site_name" content="Zikkeung's blog"/>
 
   
@@ -60,17 +72,37 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
     <header>
       
         <div class="icon"></div>
-        <time datetime="2013-09-17T05:35:21.000Z"><a href="/第一篇文章/">9月 17 2013</a></time>
+        <time datetime="2013-10-20T14:10:00.000Z"><a href="/node-webkit/">10月 20 2013</a></time>
       
       
   
-    <h1 class="title">第一篇文章</h1>
+    <h1 class="title">node-webkit 教程</h1>
   
 
     </header>
     <div class="entry">
       
-        <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字<br><a id="more"></a><br>222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222</p>
+        <h2>打包</h2>
+<h3>OSX</h3>
+<h3>step 1</h3>
+<p>在终端执行下面的命令:</p>
+<ol>
+<li><p>进入 node-webik 项目文件夹<figure class="highlight lang-cd"><figcaption><span>~/Projects/my_app```</span></figcaption><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="comment">2</span>. <span class="comment">压缩</span> <span class="comment">```Run</span> <span class="comment">zip</span> <span class="literal">-</span><span class="comment">r</span> <span class="string">.</span><span class="string">.</span><span class="comment">/${PWD##*/}</span>.<span class="comment">nw</span> <span class="comment">*
+</pre></td></tr></table></figure></p>
+</li>
+<li><p>现在就会有一个 .nw 缀的文件在上一层的目录里</p>
+</li>
+</ol>
+<p>如果机器已安装了 node-webkit.app <a href="https://s3.amazonaws.com/node-webkit/v0.7.5/node-webkit-v0.7.5-osx-ia32.zip" target="_blank">32bit, 10.7+</a>，就可以直接运行 .nw 的文件，如果想封装成app，请到第二步。</p>
+<a id="more"></a>
+
+<h3>step 2</h3>
+<ol>
+<li>下载 node-webkit.app</li>
+<li>右键 node-webkit.app 选择显示包内容，进入 <code>Contents/Resources</code>目录，将上一步的 my_app.nw 重命名为 app.nw, 然后复制进来</li>
+<li><code>Contents/Resources/app.icns</code> 这就是app的默认图标，可以己indow</li>
+</ol>
 
       
     </div>
@@ -78,6 +110,11 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
       
         
         
+  
+  <div class="tags">
+    <a href="/tags/webapp/">webapp</a>, <a href="/tags/nodejs/">nodejs</a>
+  </div>
+
         <!-- Baidu Button BEGIN -->
         <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
           <a class="bds_tsina"></a>
@@ -125,11 +162,27 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
   <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=5&isTitle=1&noborder=0&isWeibo=1&isFans=0&uid=1672327185&verifier=9bf83244&dpc=1"></iframe>
 
   
+<div class="widget tag">
+  <h3 class="title">标签</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/grunt/">grunt</a><small>1</small></li>
+  
+    <li><a href="/tags/hexo/">hexo</a><small>1</small></li>
+  
+    <li><a href="/tags/nodejs/">nodejs</a><small>1</small></li>
+  
+    <li><a href="/tags/webapp/">webapp</a><small>1</small></li>
+  
+  </ul>
+</div>
+
 
   <div class="widget tag">
     <h3 class="title">友情链接</h3>
     <ul class="entry">
-        <li><a href="#" title="兔子Gor's Blog">兔子Gor</a></li>
+        <li><a href="http://blog.loveall.us" title="兔子Gor's Blog">兔子Gor</a></li>
+        <li><a href="http://iamsonic.info" title="融点的博客">融点的博客</a></li>     
     </ul>
 </div>
 </aside>

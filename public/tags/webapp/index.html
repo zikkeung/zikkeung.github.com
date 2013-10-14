@@ -3,15 +3,13 @@
 <head>
   <meta charset="utf-8">
   
-  <title>about | Zikkeung's blog</title>
+  <title>webapp | Zikkeung's blog</title>
   <meta name="author" content="zikkeung">
-  
-  <meta name="description" content="coming soon">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="about"/>
+  
   <meta property="og:site_name" content="Zikkeung's blog"/>
 
   
@@ -54,47 +52,51 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article class="page">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+<h2 class="archive-title tag">webapp</h2>
+
+
+  
+    <article class="post">
   
   <div class="post-content">
     <header>
       
+        <div class="icon"></div>
+        <time datetime="2013-10-20T14:10:00.000Z"><a href="/node-webkit/">10月 20 2013</a></time>
+      
       
   
-    <h1 class="title">about</h1>
+    <h1 class="title"><a href="/node-webkit/">node-webkit 教程</a></h1>
   
 
     </header>
     <div class="entry">
       
-        <p>coming soon</p>
+        <h2>打包</h2>
+<h3>OSX</h3>
+<h3>step 1</h3>
+<p>在终端执行下面的命令:</p>
+<ol>
+<li><p>进入 node-webik 项目文件夹<figure class="highlight lang-cd"><figcaption><span>~/Projects/my_app```</span></figcaption><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="comment">2</span>. <span class="comment">压缩</span> <span class="comment">```Run</span> <span class="comment">zip</span> <span class="literal">-</span><span class="comment">r</span> <span class="string">.</span><span class="string">.</span><span class="comment">/${PWD##*/}</span>.<span class="comment">nw</span> <span class="comment">*
+</pre></td></tr></table></figure></p>
+</li>
+<li><p>现在就会有一个 .nw 缀的文件在上一层的目录里</p>
+</li>
+</ol>
+<p>如果机器已安装了 node-webkit.app <a href="https://s3.amazonaws.com/node-webkit/v0.7.5/node-webkit-v0.7.5-osx-ia32.zip" target="_blank">32bit, 10.7+</a>，就可以直接运行 .nw 的文件，如果想封装成app，请到第二步。</p>
 
       
     </div>
     <footer>
       
         
+          <div class="alignleft">
+            <a href="/node-webkit/#more" class="more-link">阅读全文</a>
+          </div>
         
-        <!-- Baidu Button BEGIN -->
-        <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
-          <a class="bds_tsina"></a>
-          <a class="bds_douban"></a>
-          <a class="bds_tqq"></a>
-          <a class="bds_qzone"></a>
-          <a class="bds_renren"></a>
-          <a class="bds_tieba"></a>
-          <a class="bds_sdo"></a>
-          <a class="bds_fbook"></a>
-          <a class="bds_twi"></a>
-          <span class="bds_more"></span>
-          <a class="shareCount"></a>
-        </div>
-        <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6825725" ></script>
-        <script type="text/javascript" id="bdshell_js"></script>
-        <script type="text/javascript">
-        document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
-        </script>
-        <!-- Baidu Button END -->
+        
       
       <div class="clearfix"></div>
     </footer>
@@ -102,12 +104,13 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </article>
 
 
-<section id="comment">
-  <h1 class="title">留言</h1>
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
+  
+
+  <nav id="pagination">
+  
+  
+  <div class="clearfix"></div>
+</nav>
 </div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
@@ -166,7 +169,7 @@ var disqus_shortname = 'zikkeung';
   var dsq = document.createElement('script');
   dsq.type = 'text/javascript';
   dsq.async = true;
-  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 }());
 </script>
