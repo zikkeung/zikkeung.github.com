@@ -85,30 +85,36 @@ killall Finder
 killall Finder
 </pre></td></tr></table></figure>
 
-<p>恢复</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
-</pre></td><td class="code"><pre>defaults delete <span class="keyword">com</span><span class="preprocessor">.apple</span><span class="preprocessor">.finder</span> _FXShowPosixPathInTitle
+3
+</pre></td><td class="code"><pre>恢复
+defaults delete <span class="keyword">com</span><span class="preprocessor">.apple</span><span class="preprocessor">.finder</span> _FXShowPosixPathInTitle
 killall Finder
 </pre></td></tr></table></figure>
 
 <h2>Go2Shell支持ITerm2</h2>
+<p>Go2Shell默认打开系统自带的终端，可通过下面的命令调出配置框，选择iTern2或xtern。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre><span class="comment">open</span> <span class="literal">-</span><span class="comment">a</span> <span class="comment">Go2Shell</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">args</span> <span class="comment">config
 </pre></td></tr></table></figure>
 
 <h2>开关time machina本地快照</h2>
-<p>关闭</p>
+<p>time machina 会占用磁盘来作备份空间，等插入备份盘就会将这些备份转移过去，如果不想占空磁盘空间，可将本地快照关闭。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>su<span class="operator"><span class="keyword">do</span> tmutil disablelocal
+2
+</pre></td><td class="code"><pre>关闭
+su<span class="operator"><span class="keyword">do</span> tmutil disablelocal
 </pre></td></tr></table></figure>
 
-<p>打开</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>su<span class="operator"><span class="keyword">do</span> tmutil enablelocal
+2
+</pre></td><td class="code"><pre>打开
+su<span class="operator"><span class="keyword">do</span> tmutil enablelocal
 </pre></td></tr></table></figure>
 
 <h2>开关Dashboard</h2>
+<p>Dashboard鸡肋的功能，建议关闭。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 </pre></td><td class="code"><pre>defaults write com<span class="variable">.apple</span><span class="variable">.dashboard</span> mcx-disabled -boolean <span class="literal">YES</span> 
