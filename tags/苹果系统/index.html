@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>归档：2013/9 | Zikkeung's blog</title>
+  <title>苹果系统 | Zikkeung's blog</title>
   <meta name="author" content="zikkeung">
   
   
@@ -53,7 +53,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title">2013/9</h2>
+<h2 class="archive-title tag">苹果系统</h2>
 
 
   
@@ -63,17 +63,63 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
     <header>
       
         <div class="icon"></div>
-        <time datetime="2013-09-17T02:35:21.000Z"><a href="/hello-world/">9月 17 2013</a></time>
+        <time datetime="2013-11-05T13:21:21.000Z"><a href="/mac配置命令/">11月 5 2013</a></time>
       
       
   
-    <h1 class="title"><a href="/hello-world/">Hello World</a></h1>
+    <h1 class="title"><a href="/mac配置命令/">MAC OSX 配置命令</a></h1>
   
 
     </header>
     <div class="entry">
       
-        <p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
+        <p>备忘自己常用到的命令。</p>
+<h2>开关隐藏文件</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>defaults write com<span class="variable">.apple</span><span class="variable">.finder</span> AppleShowAllFiles <span class="literal">TRUE</span>
+killall Finder
+</pre></td></tr></table></figure>
+
+<p>把 TRUE 换曾 FALSE 就可以关闭显示隐藏文件。</p>
+<h2>在Finder标题栏显示当前路径</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>defaults write com<span class="variable">.apple</span><span class="variable">.finder</span> _FXShowPosixPathInTitle -<span class="keyword">bool</span> <span class="literal">TRUE</span>
+killall Finder
+</pre></td></tr></table></figure>
+
+<p>恢复</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>defaults delete <span class="keyword">com</span><span class="preprocessor">.apple</span><span class="preprocessor">.finder</span> _FXShowPosixPathInTitle
+killall Finder
+</pre></td></tr></table></figure>
+
+<h2>Go2Shell支持ITerm2</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="comment">open</span> <span class="literal">-</span><span class="comment">a</span> <span class="comment">Go2Shell</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">args</span> <span class="comment">config
+</pre></td></tr></table></figure>
+
+<h2>开关time machina本地快照</h2>
+<p>关闭</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>su<span class="operator"><span class="keyword">do</span> tmutil disablelocal
+</pre></td></tr></table></figure>
+
+<p>打开</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>su<span class="operator"><span class="keyword">do</span> tmutil enablelocal
+</pre></td></tr></table></figure>
+
+<h2>开关Dashboard</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>defaults write com<span class="variable">.apple</span><span class="variable">.dashboard</span> mcx-disabled -boolean <span class="literal">YES</span> 
+killall Dock
+</pre></td></tr></table></figure>
+
+<p>YES换成NO就可以恢复</p>
 
       
     </div>

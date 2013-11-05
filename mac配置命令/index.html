@@ -3,15 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>实验室 | Zikkeung's blog</title>
+  <title>MAC OSX 配置命令 | Zikkeung's blog</title>
   <meta name="author" content="zikkeung">
   
-  <meta name="description" content="coming soon">
+  <meta name="description" content="备忘自己常用到的命令。
+开关隐藏文件
+1
+2
+defaults write com.apple.finder AppleShowAllFiles TRUE
+killall Finder
+
+
+把 TRUE 换曾 FALSE 就可以关闭显示隐藏文件。
+在Finder标题栏显示当前路径
+1
+2
+defau">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="实验室"/>
+  <meta property="og:title" content="MAC OSX 配置命令"/>
   <meta property="og:site_name" content="Zikkeung's blog"/>
 
   
@@ -54,20 +66,69 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article class="page">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
   <div class="post-content">
     <header>
       
+        <div class="icon"></div>
+        <time datetime="2013-11-05T13:21:21.000Z"><a href="/mac配置命令/">11月 5 2013</a></time>
+      
       
   
-    <h1 class="title">实验室</h1>
+    <h1 class="title">MAC OSX 配置命令</h1>
   
 
     </header>
     <div class="entry">
       
-        <p>coming soon</p>
+        <p>备忘自己常用到的命令。</p>
+<h2>开关隐藏文件</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>defaults write com<span class="variable">.apple</span><span class="variable">.finder</span> AppleShowAllFiles <span class="literal">TRUE</span>
+killall Finder
+</pre></td></tr></table></figure>
+
+<p>把 TRUE 换曾 FALSE 就可以关闭显示隐藏文件。</p>
+<h2>在Finder标题栏显示当前路径</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>defaults write com<span class="variable">.apple</span><span class="variable">.finder</span> _FXShowPosixPathInTitle -<span class="keyword">bool</span> <span class="literal">TRUE</span>
+killall Finder
+</pre></td></tr></table></figure>
+
+<p>恢复</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>defaults delete <span class="keyword">com</span><span class="preprocessor">.apple</span><span class="preprocessor">.finder</span> _FXShowPosixPathInTitle
+killall Finder
+</pre></td></tr></table></figure>
+
+<h2>Go2Shell支持ITerm2</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="comment">open</span> <span class="literal">-</span><span class="comment">a</span> <span class="comment">Go2Shell</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">args</span> <span class="comment">config
+</pre></td></tr></table></figure>
+
+<h2>开关time machina本地快照</h2>
+<p>关闭</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>su<span class="operator"><span class="keyword">do</span> tmutil disablelocal
+</pre></td></tr></table></figure>
+
+<p>打开</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>su<span class="operator"><span class="keyword">do</span> tmutil enablelocal
+</pre></td></tr></table></figure>
+
+<h2>开关Dashboard</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>defaults write com<span class="variable">.apple</span><span class="variable">.dashboard</span> mcx-disabled -boolean <span class="literal">YES</span> 
+killall Dock
+</pre></td></tr></table></figure>
+
+<p>YES换成NO就可以恢复</p>
 
       
     </div>
@@ -75,6 +136,11 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
       
         
         
+  
+  <div class="tags">
+    <a href="/tags/MAC/">MAC</a>, <a href="/tags/苹果系统/">苹果系统</a>
+  </div>
+
         <!-- Baidu Button BEGIN -->
         <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
           <a class="bds_tsina"></a>
