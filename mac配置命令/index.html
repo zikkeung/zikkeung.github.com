@@ -18,7 +18,16 @@ killall Finder
 在Finder标题栏显示当前路径
 1
 2
-defau">
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool TRUE
+killall Finder
+
+
+1
+2
+3
+恢复
+defaults delete com.apple.finder _FXShowPosixPathInTitle
+killall Finder">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -105,6 +114,8 @@ killall Finder
 defaults delete <span class="keyword">com</span><span class="preprocessor">.apple</span><span class="preprocessor">.finder</span> _FXShowPosixPathInTitle
 killall Finder
 </pre></td></tr></table></figure>
+
+<a id="more"></a>
 
 <h2>Go2Shell支持ITerm2</h2>
 <p>Go2Shell默认打开系统自带的终端，可通过下面的命令调出配置框，选择iTern2或xtern。</p>
