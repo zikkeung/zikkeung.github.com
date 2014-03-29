@@ -127,38 +127,49 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 <p>静态博客的评论是要使用第三方评论，DISQUS 比较有名的社会化评论，国内有多说。</p>
 <p>使用DISQUS很简单，只需要去DISQUS注册一个账号，然后修改_config.yml文件。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="attribute">disqus_shortname</span>: <span class="string">disqus_id</span>
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="label">disqus_shortname:</span> disqus_id
+```/Users/zikkeung/Documents/code/hexo/source/_posts/hello-world<span class="preprocessor">.md</span>
+
+如果要用多说，将多说提供的代码覆盖掉 ** /themes/light/layout/_partial/comment<span class="preprocessor">.ejs</span> ** 里的。
+
+
+<span class="preprocessor">## 生成静态文件</span>
 </pre></td></tr></table></figure>
 
-<p>如果要用多说，将多说提供的代码覆盖掉 <strong> /themes/light/layout/_partial/comment.ejs </strong> 里的。</p>
-<h2>生成静态文件</h2>
+<p>hexo generate</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="title">hexo</span> generate
+2
+3
+</pre></td><td class="code"><pre>执行 generate 命令后，会在 <span class="keyword">public</span> 文件夹生成静态博客文件，讲此文件夹传上去服务器环境即可
+
+<span class="preprocessor">## 预览博客</span>
 </pre></td></tr></table></figure>
 
-<p>执行 generate 命令后，会在 public 文件夹生成静态博客文件，讲此文件夹传上去服务器环境即可</p>
-<h2>预览博客</h2>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="title">hexo</span> server
-</pre></td></tr></table></figure>
-
-<h2>发布博客</h2>
-<p>部署到 Github 需要配置_config.yml文件。</p>
+<p>hexo server</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
 4
-</pre></td><td class="code"><pre><span class="method">deploy:</span>
-  <span class="method">type:</span> github
-  <span class="method">repository:</span> git@github.<span class="method">com:</span>zikkeung/zikkeung.github.com.git
-  <span class="method">branch:</span> master
+</pre></td><td class="code"><pre>
+<span class="preprocessor">## 发布博客</span>
+
+部署到 Github 需要配置_config.yml文件。
 </pre></td></tr></table></figure>
 
-<p>发布命令</p>
+<p>deploy:<br>  type: github<br>  repository: git@github.com:zikkeung/zikkeung.github.com.git<br>  branch: master</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="title">hexo</span> deploy
+2
+</pre></td><td class="code"><pre>
+发布命令
 </pre></td></tr></table></figure>
 
+<p>hexo deploy<br>```</p>
 <p>经过上面的步骤，你的博客就初步弄好了，尽情的写博客吧</p>
 
       
@@ -223,8 +234,6 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
   <h3 class="title">标签</h3>
   <ul class="entry">
   
-    <li><a href="/tags/MAC/">MAC</a><small>1</small></li>
-  
     <li><a href="/tags/grunt/">grunt</a><small>1</small></li>
   
     <li><a href="/tags/hexo/">hexo</a><small>1</small></li>
@@ -232,8 +241,6 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
     <li><a href="/tags/nodejs/">nodejs</a><small>1</small></li>
   
     <li><a href="/tags/webapp/">webapp</a><small>1</small></li>
-  
-    <li><a href="/tags/苹果系统/">苹果系统</a><small>1</small></li>
   
   </ul>
 </div>

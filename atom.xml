@@ -3,78 +3,13 @@
   <title><![CDATA[Zikkeung's blog]]></title>
   <link href="http://zikkeung.github.com/atom.xml" rel="self"/>
   <link href="http://zikkeung.github.com"/>
-  <updated>2013-11-06T00:08:49.485Z</updated>
+  <updated>2013-10-13T05:29:53.978Z</updated>
   <id>http://zikkeung.github.com/</id>
   <author>
     <name><![CDATA[zikkeung]]></name>
     <email><![CDATA[zikkeunglam@gmail.com]]></email>
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
-  <entry>
-    <title type="html"><![CDATA[MAC OSX 配置命令]]></title>
-    <link href="http://zikkeung.github.com/mac配置命令/"/>
-    <id>http://zikkeung.github.com/mac配置命令/</id>
-    <published>2013-11-05T13:21:21.000Z</published>
-    <updated>2013-11-06T00:08:32.000Z</updated>
-    <content type="html"><![CDATA[<p>备忘自己常用到的命令。</p>
-<h2>开关隐藏文件</h2>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-</pre></td><td class="code"><pre>defaults write com<span class="variable">.apple</span><span class="variable">.finder</span> AppleShowAllFiles <span class="literal">TRUE</span>
-killall Finder
-</pre></td></tr></table></figure>
-
-<p>把 TRUE 换曾 FALSE 就可以关闭显示隐藏文件。</p>
-<h2>在Finder标题栏显示当前路径</h2>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-</pre></td><td class="code"><pre>defaults write com<span class="variable">.apple</span><span class="variable">.finder</span> _FXShowPosixPathInTitle -<span class="keyword">bool</span> <span class="literal">TRUE</span>
-killall Finder
-</pre></td></tr></table></figure>
-
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-3
-</pre></td><td class="code"><pre>恢复
-defaults delete <span class="keyword">com</span><span class="preprocessor">.apple</span><span class="preprocessor">.finder</span> _FXShowPosixPathInTitle
-killall Finder
-</pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h2>Go2Shell支持ITerm2</h2>
-<p>Go2Shell默认打开系统自带的终端，可通过下面的命令调出配置框，选择iTern2或xtern。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="comment">open</span> <span class="literal">-</span><span class="comment">a</span> <span class="comment">Go2Shell</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">args</span> <span class="comment">config
-</pre></td></tr></table></figure>
-
-<h2>开关time machina本地快照</h2>
-<p>time machina 会占用磁盘来作备份空间，等插入备份盘就会将这些备份转移过去，如果不想占空磁盘空间，可将本地快照关闭。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-</pre></td><td class="code"><pre>关闭
-su<span class="operator"><span class="keyword">do</span> tmutil disablelocal
-</pre></td></tr></table></figure>
-
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-</pre></td><td class="code"><pre>打开
-su<span class="operator"><span class="keyword">do</span> tmutil enablelocal
-</pre></td></tr></table></figure>
-
-<h2>开关Dashboard</h2>
-<p>Dashboard鸡肋的功能，建议关闭。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-</pre></td><td class="code"><pre>defaults write com<span class="variable">.apple</span><span class="variable">.dashboard</span> mcx-disabled -boolean <span class="literal">YES</span> 
-killall Dock
-</pre></td></tr></table></figure>
-
-<p>YES换成NO就可以恢复</p>
-]]></content>
-    <category scheme="http://zikkeung.github.com/tags/MAC/" term="MAC"/>
-    <category scheme="http://zikkeung.github.com/tags/苹果系统/" term="苹果系统"/>
-  </entry>
   <entry>
     <title type="html"><![CDATA[node-webkit 教程]]></title>
     <link href="http://zikkeung.github.com/node-webkit/"/>
@@ -111,7 +46,7 @@ killall Dock
     <link href="http://zikkeung.github.com/开发常用网站导航/"/>
     <id>http://zikkeung.github.com/开发常用网站导航/</id>
     <published>2013-10-13T12:35:21.000Z</published>
-    <updated>2013-10-17T06:01:26.000Z</updated>
+    <updated>2013-10-13T05:29:12.000Z</updated>
     <content type="html"><![CDATA[<hr>
 <h3>API</h3>
 <ul>
@@ -134,8 +69,6 @@ killall Dock
 <li><a href="http://msdn.microsoft.com/zh-cn/library/ie/hh673549.aspx" target="_blank">IE10 开发指南</a></li>
 <li><a href="http://javascript.ruanyifeng.com/" target="_blank">JavaScript 标准参考教程</a></li>
 <li><a href="http://makingmobile.org/docs/tools/requirejs-api-zh/" target="_blank">RequireJS 2.0 的文档</a></li>
-<li><a href="http://arcturo.github.io/library/coffeescript/" target="_blank">CoffeeScript中文手册</a> <a href="http://island205.github.io/tlboc/" target="_blank">翻译</a></li>
-<li><a href="http://bonsaiden.github.io/JavaScript-Garden/zh/" target="_blank">JavaScript 秘密花园</a></li>
 </ul>
 <h3>PHP</h3>
 <ul>
@@ -153,7 +86,7 @@ killall Dock
     <link href="http://zikkeung.github.com/hexo适合前端geek的博客/"/>
     <id>http://zikkeung.github.com/hexo适合前端geek的博客/</id>
     <published>2013-10-12T11:35:21.000Z</published>
-    <updated>2013-11-05T13:17:21.000Z</updated>
+    <updated>2013-10-11T12:59:37.000Z</updated>
     <content type="html"><![CDATA[<p>hexo 是一个基于 Node.js 的静态博客程序，编译上百篇文字只需要几秒，和Octopress项目，速度占有很大的优势。hexo 只需要将生成静态网页放到服务器上就可以了，所以可以将博客托管在github、hreoku、bae等平台上。</p>
 <ul>
 <li>项目地址 <a href="https://github.com/tommy351/hexo" target="_blank">https://github.com/tommy351/hexo</a></li>
@@ -202,38 +135,49 @@ killall Dock
 <p>静态博客的评论是要使用第三方评论，DISQUS 比较有名的社会化评论，国内有多说。</p>
 <p>使用DISQUS很简单，只需要去DISQUS注册一个账号，然后修改_config.yml文件。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="attribute">disqus_shortname</span>: <span class="string">disqus_id</span>
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="label">disqus_shortname:</span> disqus_id
+```/Users/zikkeung/Documents/code/hexo/source/_posts/hello-world<span class="preprocessor">.md</span>
+
+如果要用多说，将多说提供的代码覆盖掉 ** /themes/light/layout/_partial/comment<span class="preprocessor">.ejs</span> ** 里的。
+
+
+<span class="preprocessor">## 生成静态文件</span>
 </pre></td></tr></table></figure>
 
-<p>如果要用多说，将多说提供的代码覆盖掉 <strong> /themes/light/layout/_partial/comment.ejs </strong> 里的。</p>
-<h2>生成静态文件</h2>
+<p>hexo generate</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="title">hexo</span> generate
+2
+3
+</pre></td><td class="code"><pre>执行 generate 命令后，会在 <span class="keyword">public</span> 文件夹生成静态博客文件，讲此文件夹传上去服务器环境即可
+
+<span class="preprocessor">## 预览博客</span>
 </pre></td></tr></table></figure>
 
-<p>执行 generate 命令后，会在 public 文件夹生成静态博客文件，讲此文件夹传上去服务器环境即可</p>
-<h2>预览博客</h2>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="title">hexo</span> server
-</pre></td></tr></table></figure>
-
-<h2>发布博客</h2>
-<p>部署到 Github 需要配置_config.yml文件。</p>
+<p>hexo server</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
 4
-</pre></td><td class="code"><pre><span class="method">deploy:</span>
-  <span class="method">type:</span> github
-  <span class="method">repository:</span> git@github.<span class="method">com:</span>zikkeung/zikkeung.github.com.git
-  <span class="method">branch:</span> master
+</pre></td><td class="code"><pre>
+<span class="preprocessor">## 发布博客</span>
+
+部署到 Github 需要配置_config.yml文件。
 </pre></td></tr></table></figure>
 
-<p>发布命令</p>
+<p>deploy:<br>  type: github<br>  repository: git@github.com:zikkeung/zikkeung.github.com.git<br>  branch: master</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="title">hexo</span> deploy
+2
+</pre></td><td class="code"><pre>
+发布命令
 </pre></td></tr></table></figure>
 
+<p>hexo deploy<br>```</p>
 <p>经过上面的步骤，你的博客就初步弄好了，尽情的写博客吧</p>
 ]]></content>
     <category scheme="http://zikkeung.github.com/tags/hexo/" term="hexo"/>
