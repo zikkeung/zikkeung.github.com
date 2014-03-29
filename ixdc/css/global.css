@@ -157,7 +157,7 @@ a:hover {
 	width: 14px;
 	height: 14px;
 	background: url(img/lt.png) no-repeat 50% 50%;
-	display: none;
+	display: inline-block;
 	zoom:1;
 	vertical-align: 0px;
 	margin:0 0 0 4px;
@@ -166,9 +166,6 @@ a:hover {
 @media only screen and (min-width: 768px) {
 	.button {
 		font-size: 1.375em;
-	}
-	.button i{
-		display: inline-block;
 	}
 }
 
@@ -331,7 +328,7 @@ a:hover {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 840px) {
 	.top-menu .logo img{
 		margin: 0 0 0 1.5em;
 		height: 3em;
@@ -574,6 +571,9 @@ a:hover {
 	.mod .title{
 		margin-bottom: 0.225em;
 	}
+	.mod {
+		padding: 2.25em 0 3.125em 0;
+	}
 }
 
 .old-speaker .title h2 div,
@@ -689,7 +689,7 @@ a:hover {
 }
 .tnw-gallery ul li {
 	float:left;
-	padding: 0 30px 50px;
+	padding: 0 35px 50px;
 }
 .tnw-gallery img {
 	display: block;
