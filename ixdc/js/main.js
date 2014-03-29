@@ -823,9 +823,9 @@ $(function () {
         }
     });
 
-    if(!TNW.isMobile) {
-        $('.tnw-gallery').tnwGallery();
-    }
+    // if(!TNW.isMobile) {
+    //     $('.tnw-gallery').tnwGallery();
+    // }
 
     // Init parallax sections
     $('#home').tnwParallax();

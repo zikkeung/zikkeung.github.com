@@ -438,6 +438,9 @@ a:hover {
 	#top.shrink {
 		font-size: 0.875em !important;
 	}
+	.site-nav>li.has-sub>a::after {
+		display: none;
+	}
 }
 
 
@@ -686,7 +689,7 @@ a:hover {
 }
 .tnw-gallery ul li {
 	float:left;
-	padding: 10px 30px;
+	padding: 0 30px 50px;
 }
 .tnw-gallery img {
 	display: block;
@@ -714,6 +717,22 @@ a:hover {
 		float:left;
 		padding: 10px 0;
 		width: 50%;
+	}
+	.tnw-gallery img {
+		display: block;
+		width: 80%;
+		height: auto;
+		margin: 0 auto;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.tnw-gallery ul {
+		margin: 0 5%;
+	}
+	.tnw-gallery ul li {
+		float:left;
+		padding: 10px 0;
+		width: 33.33%;
 	}
 	.tnw-gallery img {
 		display: block;
