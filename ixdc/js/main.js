@@ -809,7 +809,7 @@ $(function () {
     TNW.nav.init();
 
     // Init email signup
-    $('.email-signup').on('submit', TNW.core.emailSignup);
+   // $('.email-signup').on('submit', TNW.core.emailSignup);
 
     // Init video lightbox
     $('.video').magnificPopup({mainClass: 'mfp-fade', type: 'iframe'});
@@ -834,11 +834,11 @@ $(function () {
     $('.tabs').tnwTabs();
 
     // Init Boost scroll
-    if ($('.red-bar').length) {
-        $(window).on('scroll', function () {
-            $('.red-bar').css({'background-position': $(window).scrollTop() + 'px 0px'});
-        });
-    }
+    // if ($('.red-bar').length) {
+    //     $(window).on('scroll', function () {
+    //         $('.red-bar').css({'background-position': $(window).scrollTop() + 'px 0px'});
+    //     });
+    // }
 
     // $('#home-cycler').tnwCycler({crossfade: false, interval: 1500, repeat: false});
 });
